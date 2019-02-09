@@ -1,0 +1,344 @@
+@font-face {
+  font-family: gentium;
+  src: url('../Fonts/Gentium-basic/GenBasB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: lato;
+  src: url('../Fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: openS;
+  src: url('../Fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: yeseva;
+  src: url('../fonts/yeseva-one/YesevaOne-Regular_v2.otf') format('truetype');
+}
+
+body {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+p {
+  font-family: lato, sans-serif;
+}
+
+.separation {
+  margin-bottom: 30px;
+}
+
+h2, h3 {
+  font-family: yeseva, sans-serif;
+}
+
+
+.titreJaune {
+  color: #d9b343;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.lienExt {
+  display: flex;
+}
+
+
+
+/*mise en forme Home*/
+#navBar {
+  position: fixed;
+  background-color: rgba(175, 175, 175, 0.5);
+  z-index: 11;
+}
+
+#twitter1 {
+  background-image: url('../logos/twitter-jaune.svg');
+}
+
+#facebook1 {
+  background-image: url('../logos/facebook-jaune.svg');
+}
+
+#youtube1 {
+  background-image: url('../logos/youtube-jaune.svg');
+}
+
+.iconeNavbar {
+  width: 1em;
+  height: 1em;
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lienNav {
+  color: white;
+  font-family: gentium;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.active {
+  color: #DAB33E;
+}
+
+.navbar-toggler {
+  color: rgba(0,0,0,.5);
+border-color: rgba(0,0,0,.1);
+}
+#promo {
+  background-image: url('../img/back_promo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: yeseva;
+  color: white;
+  font-size: 5em;
+}
+
+#sepaTitre {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#lienResa {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: lato;
+  padding: 20px 50px;
+  margin-right: 15px;
+}
+
+#lienMenu {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: lato;
+  color: white;
+  padding: 20px 50px;
+  margin-left: 15px;
+}
+
+#titre {
+  padding-top: 220px;
+  padding-bottom: 140px;
+}
+
+/*Mise en forme About*/
+#about {
+  background-image: url('../img/back_about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#presentation {
+  margin: 100px 0px;
+}
+
+#assiette {
+  margin-top: 54px;
+}
+
+/*Mise en forme Ingredients*/
+#ingredients {
+  background-image: url('../img/back_ingredients.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fine {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 80px 70px;
+  color: white;
+}
+
+#test {
+  display: none;
+  text-align: left;
+}
+
+#listeCache li::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('../logos/check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#montrer:hover+#test {
+  display: block;
+}
+
+/*Mise en forme menu*/
+#menu {
+  background-image: url('../img/back_menu.jpg');
+  font-size: 0.7em;
+  background-size: cover;
+}
+
+#menu p {
+  text-align: left;
+}
+
+.meal {
+  color: #D9B343;
+  font-family: yeseva,sans-serif;
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.menu {
+  padding: 100px 0;
+}
+
+.salad {
+  margin-top: 50px;
+}
+
+.special {
+  background-color:  #D9B343;
+  text-align: right;
+  color: white;
+  margin-left: 270px;
+}
+
+.cadreJaune {
+  border: solid;
+  border-color: #D9B343;
+  border-width: thin;
+}
+
+/*Mise en forme Reviews*/
+#reviews {
+  background-image: url('../img/back_reviews.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#article {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 100px 0px;
+  padding: 70px;
+}
+
+#article p {
+  font-size: 1.2em;
+}
+
+#policeArticle {
+  font-family: gentium;
+  font-weight: bold;
+}
+
+/* Mise en forme Reservation*/
+#reservation {
+  background-image: url('../img/back_reservation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#resa {
+  padding: 100px 0;
+}
+
+label {
+  color: #cfac4b;
+  float: left;
+}
+
+#validResa {
+  background-color: #c9a131;
+  border: none;
+  border-radius: 0;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#validationTooltip03 {
+  background-size: contain;
+  background-image: url(../logos/calendar-alt.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*Mise en forme footer*/
+footer {
+  background-color:  #191919;
+  flex-direction: column;
+}
+
+footer p {
+  color: white;
+  font-family: OpenS;
+  flex-direction: column;
+}
+
+footer h4 {
+  color: white;
+  font-family: yeseva;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.iconeFooter {
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#american_express {
+  background-image: url('../logos/cc-amex.svg');
+}
+
+#paypal {
+  background-image: url('../logos/paypal.svg');
+}
+
+#visa {
+  background-image: url('../logos/cc-visa.svg');
+}
+
+#discover {
+  background-image: url('../logos/discover.svg');
+}
+
+#facebook2 {
+  background-image: url('../logos/facebook-blanc.svg');
+}
+
+#youtube2 {
+  background-image: url('../logos/youtube-blanc.svg');
+}
+
+#twitter2 {
+  background-image: url('../logos/twitter-blanc.svg');
+}
+
+#trello {
+  background-image: url('../logos/trello.svg');
+}
+
+@media screen and (max-width: 1280px) {
+  #resa1 {
+    display: none;
+  }
+  #assiette {
+    display: none;
+  }
+}
